@@ -129,8 +129,11 @@ span {
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 10px;
+    margin-bottom: 15px; 
 }
 
 .contact-form {
@@ -180,4 +183,27 @@ span {
     margin: 0 10px;
     color: #333; 
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; 
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 40px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
 }
